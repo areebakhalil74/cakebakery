@@ -215,13 +215,21 @@ background-color: #fff;
     transition: 0.5s ease;
     cursor: pointer;
 }
+.cake-btn a{
+color: black;
+
+}
+
 
 .cake-btn:hover{
     background-color: #705d4a;
     color: white;
 
 }
+.cake-btn a::before{
+ color: black;
 
+}
  
 
  @media (max-width:920px){
