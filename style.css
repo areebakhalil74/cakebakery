@@ -24,6 +24,9 @@
     box-shadow: 0 .1rem .1rem rgba(0, 0, 0, .2);
     
     }
+
+
+
     .logo{
     
      font-size: 36px;
@@ -58,8 +61,10 @@
       color: #705d4a;
       z-index:10001 ;
       display: none;
-      cursor: pointer;   
+      cursor: pointer; 
+        
      }
+    
      .top-icon i{
     
         font-size:23px ;
@@ -176,7 +181,10 @@
     -moz-transition: all 0.2 ease-in;
     cursor: pointer;
   }
+  .home button a{
+color: white;
 
+  }
   .home button:hover {
   color: #fff;
   background: #70564a;
@@ -190,6 +198,7 @@
     -webkit-animation: sh02 0.5s 0s linear;
     -moz-animation: sh02 0.5s 0s linear;
     animation: sh02 0.5s 0s linear;
+    color: white;
   }
   .home button::before {
     content: "";

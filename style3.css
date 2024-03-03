@@ -370,3 +370,64 @@ width: 10%;
 }
 /* customer review section end  */
 
+/* footer section start */ */
+#footer {
+    width: 100%;
+    background-color: #1c1b1a;
+  }
+  
+  #footer h1 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
+  .footer-content {
+    text-align: center;
+    padding-top: 5%;
+  }
+  
+  .footer-content p {
+    color: #fff;
+    font-weight: 550;
+    letter-spacing: 1px;
+    font-size: 13px;
+  }
+  
+  .social-links i {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #fff;
+    color: black;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .social-links i:hover {
+    background-color: #70564a;
+    color: #fff;
+  }
+  
+  .footer-bottom-content {
+    text-align: center;
+    background-color: #1c1b1a;
+  }
+  .footer-bottom-content p {
+    color: #fff;
+    font-size: 15px;
+  }
+  .footer-bottom-content p a {
+    color: #70564a;
+    font-weight: 600;
+  }
+  
+  
+
+
+
+
+
+/* footer section end */

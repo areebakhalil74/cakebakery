@@ -197,8 +197,15 @@ background-color: #fff;
     cursor: pointer;
     position: relative;
  }
+ .cake .crad-body h5 button a {
+  color: white;
+ }
+
+ .cake .crad-body h5 button a ::before{
+  color: white;
+ }
 .cake-btn{
-    margin-top:10px;
+    margin-top:5px;
     margin-left: 190px;
     width: 150px;
     height: 40px;
@@ -208,6 +215,7 @@ background-color: #fff;
     transition: 0.5s ease;
     cursor: pointer;
 }
+
 .cake-btn:hover{
     background-color: #705d4a;
     color: white;

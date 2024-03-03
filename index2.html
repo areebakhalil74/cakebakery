@@ -27,11 +27,12 @@
 
  <ul class="navlist">
 
-    <li><a href="index.html">Home</a></li>
-    <li><a href="index1.html">Cake</a></li>
-    <li><a href="index3.html">About</a></li>
-    <li><a href="index4.html">Categories</a></li>
-    <li><a href="index2.html">Contact</a></li>
+  <li><a href="index.html" target="_blank">Home</a></li>
+  <li><a href="index1.html" target="_blank">Cake</a></li>
+  <li><a href="index3.html" target="_blank">About</a></li>
+  <li><a href="index4.html" target="_blank">Categories</a></li>
+  <li><a href="index2.html" target="_blank">Contact</a></li>
+  
  </ul>
 
  <div class="top-icon">
@@ -57,13 +58,16 @@ Maxime fugit maiores fugiat vero ullam id accusamus quo ipsam amet optio.</p>
 </div>
 </div> 
 <div class="contact-form">
-    <form action="#">
-   <input type="text" placeholder="Name" required>
-   <input type="number" placeholder="phone" required>
-   <input type="email" placeholder="Email" required>
+    <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+   <input type="text" placeholder="Name" id="name" name="fname">
+   <input type="number" placeholder="phone" id="number">
+   <input type="email" placeholder="Email" id="Email">
    <textarea name="" id="" cols="35" rows="10" placeholder="message" required></textarea>
-   <input type="submit" value="send" class="submit" required>
-
+   <input type="button" value="Submit" name="btn" onclick="myFunction()">
+   <!-- <input type="submit" name="submit" onsubmit="return validateForm()" method="post"  value="send" class="submit" id="submit"> -->
+   <!-- <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+    <input type="submit" value="Submit">
+</form> -->
 
     </form>
 </div>  
@@ -100,7 +104,8 @@ Maxime fugit maiores fugiat vero ullam id accusamus quo ipsam amet optio.</p>
     </footer>
     
     <!-- Footer Section End -->
- 
+  
+    <script src="./main1.js"></script>
 
 </body>
 </html>
