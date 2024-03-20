@@ -6,7 +6,7 @@
     <title>Cake Bakery</title>
     <link rel="Shorcut icon" href="./image/logo 2.png">
 <!-- style -->
-<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="contact.css">
 <!-- style end -->
  <!-- font awesome -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -28,12 +28,11 @@
 
  <ul class="navlist">
 
-  <li><a href="index.html" >Home</a></li>
-  <li><a href="index1.html" >Cake</a></li>
-  <li><a href="index3.html" >About</a></li>
-  <li><a href="index4.html" >Categories</a></li>
-  <li><a href="index2.html" >Contact</a></li>
-  
+<li><a href="index.html" >Home</a></li>
+<li><a href="cake.html" >Cake</a></li>
+<li><a href="About.html" >About</a></li>
+<li><a href="categories.html" >Categories</a></li>
+<li><a href="contact.html" >Contact</a></li>  
  </ul>
 
  <div class="top-icon">
@@ -46,7 +45,7 @@
 
 
    <!-- contact sec start -->
-<sectio class="contact" id="contact">
+<section class="contact" id="contact">
  <div class="contact-info">
   <h2>Get <Span>Touch</Span></h2>
 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
@@ -58,24 +57,64 @@ Maxime fugit maiores fugiat vero ullam id accusamus quo ipsam amet optio.</p>
 
 </div>
 </div> 
-<div class="contact-form">
-    <form name="myForm" action="" onsubmit="return validateForm()" method="post">
-   <input type="text" placeholder="Name" id="name" name="fname">
-   <input type="number" placeholder="phone" id="number">
-   <input type="email" placeholder="Email" id="Email">
-   <textarea name="" id="" cols="35" rows="10" placeholder="message" required></textarea>
-   <input type="button" value="Submit" name="btn" onclick="myFunction()">
-   <!-- <input type="submit" name="submit" onsubmit="return validateForm()" method="post"  value="send" class="submit" id="submit"> -->
-   <!-- <form name="myForm" action="" onsubmit="return validateForm()" method="post">
-    <input type="submit" value="Submit">
-</form> -->
 
-    </form>
-</div>  
 
-</sectio>
+<script type="text/javascript">  
+  function validate(){  
+  var name=document.f1.name.value;  
+  var passwordlength=document.f1.password.value.length;  
+  var status=false;  
+  if(name==""){  
+  document.getElementById("namelocation").innerHTML=  
+  "  Please enter your name";  
+  status=false;
+  }else{  
+  document.getElementById("namelocation").innerHTML=" ";  
+  status=true;
+  }  
+    
+  if(passwordlength<6){  
+  document.getElementById("passwordlocation").innerHTML=  
+  "  Password must be greater than 6";  
+  status=false; 
+  }else{  
+  document.getElementById("passwordlocation").innerHTML=" ";  
+  }  
+    
+  return status;  
+  }  
+
+
+
+
+  </script>  
+  <div class="container">
+  <form name="f1" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validate()">  
+  <table>
+  <tr><td>Name:</td><td><input id="text" type="text" name="name"/>  
+  <span id="namelocation" style="color:red"></span></td></tr> 
+  <tr><td>Password:</td><td><input id="password" type="password" name="password"/>  
+  <span id="passwordlocation" style="color:red"></span></td></tr>
+  
+
+  <tr><td   colspan="2" ><input id="button" type="submit"   value="submit"/>  </td></tr>
+  </table>
+  </form> 
+  
+ 
+      
+</div>
+
+
+
+
+
+
+
+
+</section>
  <!-- contact sec end -->
-
+ 
     
 
 <hr>
@@ -106,7 +145,7 @@ Maxime fugit maiores fugiat vero ullam id accusamus quo ipsam amet optio.</p>
     
     <!-- Footer Section End -->
   
-    <script src="./main1.js"></script>
+   
 
 </body>
 </html>

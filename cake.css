@@ -22,6 +22,7 @@ display: flex;
 justify-content: space-around;
 padding: 16px 5%;
 box-shadow: 0 .1rem .1rem rgba(0, 0, 0, .2);
+background: #2d2d2d;
 
 }
 .logo{
@@ -205,8 +206,9 @@ background-color: #fff;
   color: white;
  }
 .cake-btn{
-    margin-top:5px;
-    margin-left: 190px;
+    /* margin-top:5px; */
+    margin-bottom: 20px;
+    margin-left: 1000px;
     width: 150px;
     height: 40px;
     background-color: white;
